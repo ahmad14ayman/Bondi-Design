@@ -186,14 +186,14 @@ nav .navbar-nav li a.active {
 
 /* End Subscripe */
 
-/* Start Footer */
-footer{
+/* Start .footer */
+.footer{
     background-color: var(--black-color);
 }
-footer .copyright > span {
+.footer .copyright > span {
     color: var(--green-color);
 }
-footer .copyright div span {
+.footer .copyright div span {
     color: var(--yellow-color);
 }
 .facebook{
@@ -208,4 +208,4 @@ footer .copyright div span {
 .youtupe{
     background-color: #ff0000;
 }
-/* End Footer */
+/* End .footer */
