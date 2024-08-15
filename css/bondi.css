@@ -1,0 +1,197 @@
+:root {
+    --black-color: #19283f;
+    --green-color: #3fc7c2;
+    --red-color: #fe3151;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+    color: var(--yellow-color);
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 2px;
+    width: 120px;
+    background-color: var(--green-color);
+    border-radius: 2px;
+}
+
+/* Start NavBar */
+nav {
+    background-color: var(--black-color);
+}
+
+nav .navbar-nav li a {
+    color: #fff;
+}
+
+nav .navbar-nav li a:hover,
+nav .navbar-nav li a:focus,
+nav .navbar-nav li a.active {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    font-size: 25px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+.search {
+    border-left: 1px solid var(--green-color);
+}
+
+.search svg {
+    color: #fff;
+}
+
+/* End NavBar */
+
+/* Start Landing */
+.landing {
+    background-color: var(--black-color);
+    min-height: calc(100vh - 72px);
+}
+
+/* End Landing */
+/* Start Features */
+.icon-holder {
+    height: 200px;
+}
+
+.icon-holder svg {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.icon {
+    color: var(--green-color);
+}
+
+.features .row h4 {
+    color: var(--yellow-color);
+}
+
+/* End Features */
+/* Start Our Work  */
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+.our-work ul li.active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--red-color);
+}
+
+.our-work .box {
+    padding: 5px;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgb(51 209 204 / 76%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    transform: translateX(calc(-100% - 5px));
+    transition: transform 0.3s;
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+
+}
+
+/* End Our Work  */
+/* Start Our Stuff  */
+
+.our-stuff p.paragraph {
+    max-width: 500px;
+}
+
+/* End Our Stuff  */
+
+/* Start Our Team  */
+.our-team {
+    background-color: var(--section-color);
+}
+
+.our-team h2 {
+    color: var(--yellow-color);
+}
+
+.box h4 {
+    background-color: var(--green-color);
+}
+
+/* End Our Team  */
+/* Start Project  */
+.project {
+    background-color: var(--black-color);
+}
+
+/* End Prject  */
+
+/* Start Subscripe*/
+.subscribe {
+    background-color: #fec400;
+}
+.subscribe input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff
+}
+.subscribe input[type="email"]:focus{
+    outline: none;
+}
+.subscribe input[type="email"]::placeholder{
+    color: #fff;
+}
+.subscribe input[type="submit"] {
+    background-color: var(--black-color);
+    color: var(--yellow-color);
+}
+
+/* End Subscripe */
