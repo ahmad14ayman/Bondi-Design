@@ -6,6 +6,11 @@
     --section-color: #eff7fa;
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url(../Roboto/Roboto-Regular.ttf);
+}
+
 body {
     font-family: "Roboto";
     font-weight: 500;
@@ -38,33 +43,18 @@ nav {
     background-color: var(--black-color);
 }
 
-nav .navbar-nav li a {
-    color: #fff;
-}
-
 nav .navbar-nav li a:hover,
 nav .navbar-nav li a:focus,
 nav .navbar-nav li a.active {
     color: var(--green-color);
 }
 
-.navbar .navbar-toggler {
-    color: #fff;
-    border-color: #fff;
-    font-size: 25px;
-}
-
 .navbar .navbar-toggler:focus {
     box-shadow: none;
 }
 
-
 .search {
     border-left: 1px solid var(--green-color);
-}
-
-.search svg {
-    color: #fff;
 }
 
 /* End NavBar */
@@ -195,3 +185,27 @@ nav .navbar-nav li a.active {
 }
 
 /* End Subscripe */
+
+/* Start Footer */
+footer{
+    background-color: var(--black-color);
+}
+footer .copyright > span {
+    color: var(--green-color);
+}
+footer .copyright div span {
+    color: var(--yellow-color);
+}
+.facebook{
+    background-color: #1877f2;
+}
+.x{
+    background-color: #14171a;
+}
+.linkedin{
+    background-color: #0a66c2;
+}
+.youtupe{
+    background-color: #ff0000;
+}
+/* End Footer */
